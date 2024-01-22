@@ -9,7 +9,7 @@ Small utility for remapping fabric mod, made on the basis of [simple-yarn-deobf]
 
 - Run ```start.cmd``` and fill input/output files.
 
-- To get the yarn mappings version you need you can visit [this site](https://fabricmc.net/develop) and select the minecraft version you need. After that, fill in the mapping.
+- To get the yarn mappings version you can visit [this site](https://fabricmc.net/develop) and select the Minecraft version you need. After that, fill in the mapping.
 
-- Decompile the file if you need and wait until the program finishes remapping.
+- Decompile the file if you need it and wait until the program finishes remapping.
 
