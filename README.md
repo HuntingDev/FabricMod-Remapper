@@ -5,7 +5,7 @@ Small utility for remapping fabric mod, made on the basis of [simple-yarn-deobf]
 # Usage
 - Have or download Java 8 or higher
 
-- Build or download from [release](https://github.com/HuntingDev/FabricMod-Remapper/releases/tag/main).
+- Build or download from [release](https://github.com/HuntingDev/FabricMod-Remapper/releases/).
 
 - Run ```start.cmd``` and fill input/output files.
 
