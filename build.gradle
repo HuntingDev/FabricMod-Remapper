@@ -1,0 +1,43 @@
+apply plugin: 'java'
+
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://maven.fabricmc.net/'
+    }
+    maven { url = 'https://files.minecraftforge.net/maven' }
+    maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+
+
+}
+
+dependencies {
+    compile 'net.fabricmc:tiny-remapper:0.9.0'
+    compile 'com.google.guava:guava:32.0.0-android'
+    compile 'net.sf.jopt-simple:jopt-simple:5.0.4'
+    compile 'net.fabricmc:stitch:0.2.1.61'
+    compile 'org.benf:cfr:0.152'
+    compile 'io.github.skylot:jadx-core:1.3.3'
+    compile 'io.github.skylot:jadx-java-input:1.3.3'
+
+//    compile 'org.slf4j:slf4j-api:2.0.1'
+//    compile 'org.slf4j:slf4j-simple:2.0.1'
+//    compile 'ch.qos.logback:logback-classic:1.4.12'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'dev.hunter.deobf.Main'
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    exclude 'META-INF/'
+}
+
+
