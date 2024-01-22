@@ -1,6 +1,6 @@
 # FabricMod-Remapper
 
-Small utility for remapping fabric mod.
+Small utility for remapping fabric mod, made on the basis of [simple-yarn-deobf](https://github.com/zebp/simple-yarn-deobf).
 
 # Usage
 - Have or download Java 8 or higher
